@@ -10,5 +10,12 @@ namespace ProyectoUniversidad.Models
         string nombre;
         long idMateria;
         Carrera carrera;
+        int nota;
+
+        public Materia nota(int x)
+        {
+            nota = x;
+            return this;
+        }
     }
 }

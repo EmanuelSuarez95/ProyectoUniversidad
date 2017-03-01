@@ -12,5 +12,10 @@ namespace ProyectoUniversidad.Models
         long dni;
         string mail;
         List<Materia> materiasInscriptas;
+
+        public List<Materia> getMateriasInscriptas()
+        {
+            return materiasInscriptas;
+        }
     }
 }
