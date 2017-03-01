@@ -10,5 +10,7 @@ namespace ProyectoUniversidad.Models
         string nombre;
         long idCarrera;
         List<Materia> listaMaterias;
+        List<Profesor> listaProfesores;
+        List<Alumno> listaAlumnos;
     }
 }

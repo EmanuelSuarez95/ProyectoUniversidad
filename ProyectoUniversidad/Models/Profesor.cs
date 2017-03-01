@@ -13,22 +13,15 @@ namespace ProyectoUniversidad.Models
         string mail;
         List<Materia> listaMaterias;
 
-        public Materia calificar(Alumno alumno, int nota)
+        public void calificar(Alumno alumno,Materia materia, int nota)
         {
-            List<Materia> materias = alumno.getMateriasInscriptas();
-            foreach(Materia m in materias)
-            {
-                foreach(Materia m2 in listaMaterias)
+            foreach(Materia m in alumno.getMateriasInscriptas())
                 {
-                    if (m == m2)
-                    {
-                        materia = m;
-                        m.nota == nota;
-                        
-                    }
+                if (materia == m){
+                    m.setNota(nota);
+
+                   }
                 }
             }
-            return materia;
         }
     }
-}
